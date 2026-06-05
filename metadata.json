@@ -1,0 +1,6 @@
+{
+  "name": "Falcontech Rastreadores",
+  "description": "Website profissional de rastreamento veicular com simulador interativo de mapas, bloqueio pelo celular, calculadora de planos inteligentes e gerenciador de leads interativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

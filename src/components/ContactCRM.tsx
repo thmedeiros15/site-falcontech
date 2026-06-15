@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Mail, Phone, MapPin, Send, Layers, UserCheck, Headphones,
-  Trash2, MessageCircle, Eye, Settings, Plus, CheckCircle, Database, X,
+  Trash2, Eye, Settings, Plus, CheckCircle, Database, X,
   Instagram, Facebook
 } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 import { motion, AnimatePresence } from 'motion/react';
 import { Lead } from '../types';
 import contactBg from '../assets/imagemareafaleconosco.jpg';
@@ -180,7 +181,7 @@ export default function ContactCRM() {
               rel="noopener noreferrer"
               className="btn-whatsapp-3d w-full max-w-sm py-4 px-7 hover:text-white"
             >
-              <MessageCircle className="w-5 h-5 text-white fill-white/20" strokeWidth={2.2} />
+              <WhatsAppIcon className="w-5 h-5 text-white" />
               <span>FALAR NO WHATSAPP</span>
             </a>
 
@@ -329,7 +330,7 @@ export default function ContactCRM() {
                               rel="noreferrer noopener"
                               className="px-3 py-1.5 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-black hover:font-bold rounded-lg border border-emerald-500/20 transition-all flex items-center gap-1.5 text-xs font-bold"
                             >
-                              <MessageCircle className="w-4 h-4" />
+                              <WhatsAppIcon className="w-4 h-4 text-white" />
                               <span>{l.phone}</span>
                             </a>
 

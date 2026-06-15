@@ -1,7 +1,8 @@
 import React from 'react';
 import { 
-  Car, Bike, Truck, Bus, Shield, MessageCircle 
+  Car, Bike, Truck, Bus, Shield
 } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 import planosFalconImg from '../assets/planos falcon.jpeg';
 
 export default function PlansCalculator() {
@@ -106,7 +107,7 @@ export default function PlansCalculator() {
                 rel="noopener noreferrer"
                 className="btn-whatsapp-3d w-full py-4 px-6 hover:text-white"
               >
-                <MessageCircle className="w-5 h-5 text-white fill-white/20" strokeWidth={2.2} />
+                <WhatsAppIcon className="w-5 h-5 text-white" />
                 <span>WHATSAPP</span>
               </a>
             </div>
@@ -174,7 +175,7 @@ export default function PlansCalculator() {
                 rel="noopener noreferrer"
                 className="btn-whatsapp-3d w-full py-4 px-6 hover:text-white"
               >
-                <MessageCircle className="w-5 h-5 text-white fill-white/20" strokeWidth={2.2} />
+                <WhatsAppIcon className="w-5 h-5 text-white" />
                 <span>WHATSAPP</span>
               </a>
             </div>

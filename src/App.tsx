@@ -11,8 +11,9 @@ import heroBg from './assets/imagem oficial de inicio do site.jpeg';
 
 import { 
   Shield, Radio, Smartphone, ChevronRight, CheckCircle2, 
-  MapPin, Star, Sparkles, MessageCircle, ArrowRight, ShieldCheck 
+  MapPin, Star, Sparkles, ArrowRight, ShieldCheck 
 } from 'lucide-react';
+import WhatsAppIcon from './components/WhatsAppIcon';
 import { motion } from 'motion/react';
 
 // Ref to generated image
@@ -75,11 +76,11 @@ export default function App() {
           <img 
             src={heroBg} 
             alt="FalconTech Rastreamento" 
-            className="w-full h-full object-cover object-[25%_center] lg:object-[72%_center] select-none"
+            className="w-full h-full object-cover object-center brightness-[0.55] lg:brightness-100 lg:object-[72%_center] select-none"
             referrerPolicy="no-referrer"
           />
           {/* Mobile gradient to ensure readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent lg:hidden" />
+          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/60 via-zinc-950/20 to-transparent lg:hidden" />
           {/* Smooth left-to-right gradient on desktop to blend the image into the solid dark background */}
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-zinc-950 via-zinc-950/75 via-zinc-950/20 to-transparent hidden lg:block" />
           {/* Smooth bottom gradient to blend into the next section */}
@@ -128,7 +129,7 @@ export default function App() {
                 rel="noopener noreferrer"
                 className="btn-whatsapp-3d px-8 py-4 text-white hover:text-white"
               >
-                <MessageCircle className="w-5 h-5 text-white fill-white/20" strokeWidth={2} />
+                <WhatsAppIcon className="w-5 h-5 text-white" />
                 <span>FALAR NO WHATSAPP</span>
               </a>
             </div>
@@ -186,7 +187,7 @@ export default function App() {
           
           {/* Logo container columns spacing formatting */}
           <div className="flex flex-col items-center gap-4 mb-8">
-            <img src={logo} alt="FalconTech Rastreadores" className="h-16 sm:h-20 md:h-24 w-auto object-contain" />
+            <img src={logo} alt="FalconTech Rastreadores" className="h-28 sm:h-20 md:h-24 w-auto object-contain" />
           </div>
 
           <div className="border-t border-zinc-900/60 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
@@ -210,13 +211,13 @@ export default function App() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"
-        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-15 h-15 rounded-full bg-gradient-to-b from-[#00e600] to-[#009900] border-t border-white/40 border-b-[4px] border-[#007700] shadow-[0_8px_30px_rgba(0,204,0,0.4)] hover:brightness-110 hover:-translate-y-[2px] hover:border-b-[6px] active:translate-y-[2px] active:border-b-[2px] transition-all duration-200 group"
+        className="fixed bottom-6 right-6 z-50 hidden lg:flex items-center justify-center w-15 h-15 rounded-full bg-gradient-to-b from-[#00e600] to-[#009900] border-t border-white/40 border-b-[4px] border-[#007700] shadow-[0_8px_30px_rgba(0,204,0,0.4)] hover:brightness-110 hover:-translate-y-[2px] hover:border-b-[6px] active:translate-y-[2px] active:border-b-[2px] transition-all duration-200 group"
       >
         {/* Dual pulsing outer wave rings matching brand color */}
         <span className="absolute inset-0 rounded-full bg-[#00cc00]/30 animate-ping pointer-events-none" />
         
         {/* Solid brand color matching WhatsApp icon layout */}
-        <MessageCircle className="w-7 h-7 fill-white text-white group-hover:rotate-12 transition-transform duration-300 relative z-10" strokeWidth={2.2} />
+        <WhatsAppIcon className="w-7 h-7 text-white group-hover:rotate-12 transition-transform duration-300 relative z-10" />
 
         {/* Dynamic slide-in tooltip tag for engagement */}
         <span className="absolute right-16 scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 bg-zinc-950 text-[#00cc00] border border-[#00cc00]/25 text-xs font-bold px-3.5 py-1.5 rounded-lg whitespace-nowrap pointer-events-none shadow-xl">

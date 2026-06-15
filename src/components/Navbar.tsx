@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, MessageCircle, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 import { motion, AnimatePresence } from 'motion/react';
 import logo from '../assets/logocomfundoremovido.png';
 
@@ -153,7 +154,7 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
               rel="noreferrer noopener"
               className="btn-whatsapp-3d-sm px-4 py-2.5 text-[13px] hover:text-white"
             >
-              <MessageCircle className="w-4 h-4 text-white fill-white/10" strokeWidth={2.2} />
+              <WhatsAppIcon className="w-4 h-4 text-white" />
               <span>Falar no WhatsApp</span>
               <ArrowRight className="w-3.5 h-3.5 text-white" />
             </a>
@@ -211,7 +212,7 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
                   rel="noreferrer noopener"
                   className="btn-whatsapp-3d-sm w-full py-2.5 px-4 text-base hover:text-white"
                 >
-                  <MessageCircle className="w-4 h-4 text-white fill-white/10" strokeWidth={2.2} />
+                  <WhatsAppIcon className="w-4 h-4 text-white" />
                   <span>Falar no WhatsApp</span>
                 </a>
               </div>

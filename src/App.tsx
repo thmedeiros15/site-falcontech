@@ -7,7 +7,7 @@ import FAQ from './components/FAQ';
 import ContactCRM from './components/ContactCRM';
 import TrackingSimulator from './components/TrackingSimulator';
 import logo from './assets/logocomfundoremovido.png';
-import heroBg from './assets/imagemdefundopaginainicio.jpeg';
+import heroBg from './assets/imagem oficial de inicio do site.jpeg';
 
 import { 
   Shield, Radio, Smartphone, ChevronRight, CheckCircle2, 

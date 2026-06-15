@@ -2,6 +2,7 @@ import React from 'react';
 import { 
   Car, Bike, Truck, Bus, Shield, MessageCircle 
 } from 'lucide-react';
+import planosFalconImg from '../assets/planos falcon.jpeg';
 
 export default function PlansCalculator() {
   
@@ -184,6 +185,15 @@ export default function PlansCalculator() {
 
           </div>
 
+        </div>
+
+        {/* Imagem demonstrando o app e categorias de veículos */}
+        <div className="mt-12 sm:mt-16 max-w-5xl mx-auto rounded-3xl overflow-hidden border border-zinc-900 shadow-[0_12px_40px_rgba(0,0,0,0.5)]">
+          <img 
+            src={planosFalconImg} 
+            alt="Aplicativo e Categorias FalconTech" 
+            className="w-full h-auto object-cover select-none"
+          />
         </div>
 
       </div>

@@ -71,17 +71,19 @@ export default function App() {
         className="relative pt-32 pb-12 sm:pt-40 sm:pb-16 lg:pt-48 lg:pb-20 flex items-center overflow-hidden"
       >
         {/* Full Background Image */}
-        <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] z-0 pointer-events-none">
           <img 
             src={heroBg} 
             alt="FalconTech Rastreamento" 
-            className="w-full h-full object-cover object-right select-none"
+            className="w-full h-full object-cover object-left-top lg:object-center select-none"
             referrerPolicy="no-referrer"
           />
-          {/* Degradê escuro da esquerda para a direita para proteger a leitura contra o farol da moto */}
-          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/95 via-zinc-950/85 to-transparent" />
-          {/* Degradê inferior suave para mesclar com a próxima seção */}
-          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
+          {/* Mobile gradient to ensure readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent lg:hidden" />
+          {/* Smooth left-to-right gradient on desktop to blend the image into the solid dark background */}
+          <div className="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-zinc-950 to-transparent hidden lg:block" />
+          {/* Smooth bottom gradient to blend into the next section */}
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-zinc-950 to-transparent" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex justify-start">

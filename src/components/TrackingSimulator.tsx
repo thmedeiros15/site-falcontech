@@ -7,7 +7,7 @@ import { motion } from 'motion/react';
 
 export default function TrackingSimulator() {
   const androidUrl = "https://play.google.com/store/apps/details?id=br.com.rs.falcontech";
-  const iosUrl = "https://apps.apple.com/br/app/rastro-system-3-0/id6474566461";
+  const iosUrl = `https://apps.apple.com/br/app/rastro-system-3-0/id6474566461`;
   
   // Custom QR Code API generator link (secure and reliable)
   const androidQrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&margin=8&color=0c0a09&bgcolor=ffffff&data=${encodeURIComponent(androidUrl)}`;
@@ -53,7 +53,7 @@ export default function TrackingSimulator() {
           </div>
 
           <a 
-            href="https://teste.rastrosystem.com.br/acl/login/?next=/"
+            href="https://falcontech.rastrosystem.com.br/acl/login/?next=/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-zinc-800 text-white font-sans font-extrabold text-xs uppercase tracking-wider hover:bg-zinc-700 border border-zinc-700/30 hover:border-zinc-600 transition-all cursor-pointer"
@@ -70,9 +70,9 @@ export default function TrackingSimulator() {
           <div className="flex flex-col justify-between bg-zinc-900/30 border border-zinc-800/80 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:border-[#00cc00]/20 transition-all duration-300">
             <div className="text-center md:text-left flex flex-col items-center md:items-start">
               <div className="flex items-center gap-3 mb-4">
-                <div className="h-9 w-9 rounded-lg bg-[#00cc00]/10 border border-[#00cc00]/20 flex items-center justify-center text-[#00cc00]">
+                <a href={androidUrl} target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-lg bg-[#00cc00]/10 border border-[#00cc00]/20 flex items-center justify-center text-[#00cc00] hover:scale-110 transition-transform cursor-pointer">
                   <Smartphone className="w-4.5 h-4.5" />
-                </div>
+                </a>
                 <div className="text-left">
                   <span className="text-[10px] uppercase font-mono font-bold tracking-widest text-[#00cc00]">DISPONÍVEL</span>
                   <h4 className="font-sans font-black text-white text-base tracking-tight leading-none">Para Android</h4>
@@ -84,7 +84,7 @@ export default function TrackingSimulator() {
               </p>
 
               {/* QR Code Container designed cleanly */}
-              <div className="bg-white p-3 rounded-2xl shadow-xl shadow-black/80 inline-block mb-6 border border-zinc-800">
+              <a href={androidUrl} target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-2xl shadow-xl shadow-black/80 inline-block mb-6 border border-zinc-800 hover:scale-105 transition-transform cursor-pointer block">
                 <img 
                   src={androidQrUrl} 
                   alt="QR Code Google Play FalconTech" 
@@ -93,9 +93,9 @@ export default function TrackingSimulator() {
                   referrerPolicy="no-referrer"
                 />
                 <span className="block text-[8px] font-mono text-zinc-500 uppercase tracking-wider text-center mt-2.5 font-bold">
-                  Escaneie com a câmera
+                  Escaneie com a câmera ou clique
                 </span>
-              </div>
+              </a>
             </div>
 
             <a 
@@ -113,9 +113,9 @@ export default function TrackingSimulator() {
           <div className="flex flex-col justify-between bg-zinc-900/30 border border-zinc-800/80 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:border-[#00cc00]/20 transition-all duration-300">
             <div className="text-center md:text-left flex flex-col items-center md:items-start">
               <div className="flex items-center gap-3 mb-4">
-                <div className="h-9 w-9 rounded-lg bg-[#00cc00]/10 border border-[#00cc00]/20 flex items-center justify-center text-[#00cc00]">
+                <a href={iosUrl} target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-lg bg-[#00cc00]/10 border border-[#00cc00]/20 flex items-center justify-center text-[#00cc00] hover:scale-110 transition-transform cursor-pointer">
                   <Smartphone className="w-4.5 h-4.5" />
-                </div>
+                </a>
                 <div className="text-left">
                   <span className="text-[10px] uppercase font-mono font-bold tracking-widest text-[#00cc00]">DISPONÍVEL</span>
                   <h4 className="font-sans font-black text-white text-base tracking-tight leading-none">Para iOS (iPhone)</h4>
@@ -127,7 +127,7 @@ export default function TrackingSimulator() {
               </p>
 
               {/* QR Code Container designed cleanly */}
-              <div className="bg-white p-3 rounded-2xl shadow-xl shadow-black/80 inline-block mb-6 border border-zinc-800">
+              <a href={iosUrl} target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-2xl shadow-xl shadow-black/80 inline-block mb-6 border border-zinc-800 hover:scale-105 transition-transform cursor-pointer block">
                 <img 
                   src={iosQrUrl} 
                   alt="QR Code Apple App Store FalconTech" 
@@ -136,9 +136,9 @@ export default function TrackingSimulator() {
                   referrerPolicy="no-referrer"
                 />
                 <span className="block text-[8px] font-mono text-zinc-500 uppercase tracking-wider text-center mt-2.5 font-bold">
-                  Escaneie com a câmera
+                  Escaneie com a câmera ou clique
                 </span>
-              </div>
+              </a>
             </div>
 
             <a 

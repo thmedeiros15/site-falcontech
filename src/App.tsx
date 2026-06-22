@@ -122,7 +122,7 @@ export default function App() {
             </div>
 
             {/* Cta Buttons - Only WhatsApp Button left */}
-            <div className="flex flex-col sm:flex-row items-start gap-4">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
               <a
                 href="https://api.whatsapp.com/send?phone=5561994413422&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20de%20rastreamento%20da%20Falcontech!"
                 target="_blank"
